@@ -23,8 +23,27 @@ class Solution:
 
         #return the nodes of the newly created binary tree
         return Node
-        
-        
+    
+   
+def tree_reader(Node):
+    """ prints the human readable format of the tree """
+  if not Node:
+    return 
+  
+  print(Node.val, end=" ")
+  tree_reader(Node.left)
+
+  tree_reader(Node.right)
+
+
+if __name__=='__main__':
+    
+  preorder = [3,9,20,15,7]
+  inorder = [9,3,15,20,7]
+
+  tree = Solution()
+  node = tree.buildTree(preorder,inorder)
+  tree_reader(node)
         
         
         
