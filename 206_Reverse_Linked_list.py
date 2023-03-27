@@ -30,7 +30,8 @@ class Solution:
             current = next_
             
         return previous 
-
+    
+    
         ############### Recursive Method ################
         # if not head or not head.next:
         #     return head
