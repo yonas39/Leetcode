@@ -18,9 +18,7 @@ class Solution:
 
             now we have 1-->2 converted to 2-->1 and it continues until current reaches None
         """
-
-        # return previous
-
+        ############### Iterative Method #################
         current = head
         previous = None
         next_ = None
@@ -32,6 +30,15 @@ class Solution:
             current = next_
             
         return previous 
+
+        ############### Recursive Method ################
+        # if not head or not head.next:
+        #     return head
+        # reversed_ = self.reverseList(head.next)
+        # head.next.next = head
+        # head.next = None
+        # return reversed_
+
 
 
 
